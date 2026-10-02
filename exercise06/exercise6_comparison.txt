@@ -1,0 +1,9 @@
+Original message2.cc:
+The receiver expects messages specifically from process 0. It receives the
+values 0, 10, and 20 successfully.
+
+MPI_ANY_SOURCE version:
+The receiver accepts a message from any process in MPI_COMM_WORLD. With the
+current two-process program, the output and values are the same because
+process 0 is the only sender. MPI_ANY_SOURCE changes the matching rule, not
+the data being sent, so the calculated results remain unchanged.

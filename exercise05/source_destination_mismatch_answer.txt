@@ -1,0 +1,4 @@
+When the source and destination do not match, the message cannot be
+delivered to the receiving process. The receiver waits indefinitely for a
+message from the specified source, while the sender may also remain blocked
+waiting for a matching receive. This causes the MPI program to deadlock.
